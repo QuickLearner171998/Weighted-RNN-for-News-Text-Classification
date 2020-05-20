@@ -23,18 +23,24 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 | BiGRU baseline | 77.88 | 75.66 | 3 |
 ### WRNN (GRU unit) Statistics
 #### Graphs
-![](/images/wrnn_gru_acc.png) ![](/images/wrrn_gru_loss.png)
+![](/images/wrnn_gru_acc.png) ![](/images/wrnn_gru_loss.png)
 #### Confusion Matrix
+![](/images/wrrn_gru_cf.png)
 
 ### WRNN (LSTM unit) Statistics
 #### Graphs
-![](/images/wrnn_lstm_acc.png) ![](/images/wrrn_lstm_loss.png)
+![](/images/wrnn_lstm_acc.png) ![](/images/wrnn_lstm_loss.png)
 #### Confusion Matrix
+![](/images/wrrn_lstm_cf.png)
 
 ### GRU baseline Statistics
 #### Graphs
 ![](/images/gru_acc.png) ![](/images/gru_loss.png)
+#### Confusion Matrix
+![](/images/gru_cf.png)
 
 ### BiGRU baseline Statistics
 #### Graphs
 ![](/images/bigru_acc.png) ![](/images/bigru_loss.png)
+#### Confusion Matrix
+![](/images/bigru_cf.png)
