@@ -12,3 +12,29 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 ```
 * Now, you should have the GloVe embeddings in your Google Drive. Make sure they are **not** inside any folder.
 * Next, run all the cells after the first cell and excluding the GloVe download cell.
+
+## Results
+### Overall statistics
+| Model | Test Accuracy | Avg. time/epoch | Convergence rate |
+| ----- | ------------- | --------------- | ---------------- |
+| WRNN (GRU unit) | 85.73 | 40.02 | 7 |
+| WRNN (LSTM unit) | 87.37 | 34.23 | 9 |
+| GRU baseline | 81.37 | 41.31 | 3 |
+| BiGRU baseline | 77.88 | 75.66 | 3 |
+### WRNN (GRU unit) Statistics
+#### Graphs
+![](/images/wrnn_gru_acc.png) ![](/images/wrrn_gru_loss.png)
+#### Confusion Matrix
+
+### WRNN (LSTM unit) Statistics
+#### Graphs
+![](/images/wrnn_lstm_acc.png) ![](/images/wrrn_lstm_loss.png)
+#### Confusion Matrix
+
+### GRU baseline Statistics
+#### Graphs
+![](/images/gru_acc.png) ![](/images/gru_loss.png)
+
+### BiGRU baseline Statistics
+#### Graphs
+![](/images/bigru_acc.png) ![](/images/bigru_loss.png)
