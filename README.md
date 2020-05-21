@@ -25,22 +25,23 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 #### Graphs
 ![](/images/wrnn_gru_acc.png) ![](/images/wrnn_gru_loss.png)
 #### Confusion Matrix
-![](/images/wrnn_gru_cf.png)
+![](/images/wrnn_gru_cf.png) ![](/images/wrnn_gru_clf.png)
+
 
 ### WRNN (LSTM unit) Statistics
 #### Graphs
 ![](/images/wrnn_lstm_acc.png) ![](/images/wrnn_lstm_loss.png)
 #### Confusion Matrix
-![](/images/wrnn_lstm_cf.png)
+![](/images/wrnn_lstm_cf.png) ![](/images/wrnn_lstm_clf.png)
 
 ### GRU baseline Statistics
 #### Graphs
 ![](/images/gru_acc.png) ![](/images/gru_loss.png)
 #### Confusion Matrix
-![](/images/gru_cf.png)
+![](/images/gru_cf.png) ![](/images/gru_clf.png)
 
 ### BiGRU baseline Statistics
 #### Graphs
 ![](/images/bigru_acc.png) ![](/images/bigru_loss.png)
 #### Confusion Matrix
-![](/images/bigru_cf.png)
+![](/images/bigru_cf.png) ![](/images/bigru_clf.png)
