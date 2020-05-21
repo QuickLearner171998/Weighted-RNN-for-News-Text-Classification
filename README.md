@@ -16,7 +16,7 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 ## Results
 ### Overall statistics
 | Model | Test Accuracy | Macro avg. precision | Macro avg. recall | Macro avg. F1 | Avg. time/epoch | Convergence rate |
-| ----- | ------------- | --------------- | ---------------- |
+| ----- | ------------- | -------------------- | ----------------- | ------------- | --------------- | ---------------- |
 | WRNN (GRU unit) | 85.73 | 86.0 | 85.0 | 85.0 | 40.02 | 7 |
 | WRNN (LSTM unit) | 87.37 | 88.0 | 87.0 | 87.0 | 34.23 | 9 |
 | GRU baseline | 81.37 | 82.0 | 80.0 | 81.0 | 41.31 | 3 |
@@ -27,7 +27,7 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 #### Confusion Matrix
 ![](/images/wrnn_gru_cf.png) 
 #### Classification Report
-![](/images/wrnn_gru_clf.png)
+![](/images/wrnn_gru_clf.PNG)
 
 ### WRNN (LSTM unit) Statistics
 #### Graphs
@@ -35,7 +35,7 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 #### Confusion Matrix
 ![](/images/wrnn_lstm_cf.png)
 #### Classification Report
-![](/images/wrnn_lstm_clf.png)
+![](/images/wrnn_lstm_clf.PNG)
 
 ### GRU baseline Statistics
 #### Graphs
@@ -51,4 +51,4 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 #### Confusion Matrix
 ![](/images/bigru_cf.png)
 #### Classification Report
-![](/images/bigru_clf.png)
+![](/images/bigru_clf.PNG)
