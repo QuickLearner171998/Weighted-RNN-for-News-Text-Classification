@@ -1,5 +1,23 @@
-# Weighted-RNN-for-News-Text-Classification
-Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
+# Weighted RNN for News Text Classification
+* This repository contains an implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
+* The task is to classify news arcticles into one of the 20 categories. Therefore, it is a sentence classification task.
+
+## Architecture details
+The following diagram illustrates the architecture of WRNN:
+![alt-text](/images/wrnn.png "WRNN")
+* Here, wi's are **scalars** which are multiplied with RNN outputs to form a weighted representation.
+* The weighted vectors are summed and passed onto fully-connected layers for classification.
+* Dropout is added to both after RNN and fully-connected layer 1.
+* L2 regularization is employed for the fully-connected layer 1 weights.
+
+## Experimental details
+* We used the dataset provided by sklearn library (via the ```fetch_20newsgroups``` function).
+* We download the whole dataset and randomly split it into 90:10 train-test partition (random seed is set in code).
+* The most frequent **40439** (vocab size mentioned in paper) words are selected for the vocabulary. The pre-trained embeddings are allowed to be fine-tuned during the model training process.
+* The paper used 200d word2vec embeddings, but the source is not mentioned. Instead, we use 300d GloVe embeddings and report results using them. We also trained custom 200d word2vec embeddings on the news classification dataset but it overfitted the models.
+* SL (max sentence length) is set as **300**.
+* From the train partition, 5% of the dataset is used as validation set to select hyperparamters.
+* Adam optimizer with early stopping is used to optimize the network weights.
 
 ## Use
 * Download the **WRNN_News_Text_Classification.ipynb** file.
@@ -14,6 +32,9 @@ Implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
 * Next, run all the cells after the first cell and excluding the GloVe download cell.
 
 ## Results
+* We report results on the test set for WRNN (with GRU unit), WRNN (with LSTM unit), GRU baseline and BiGRU baseline models.
+* The results are left as such in the notebook file above.
+
 ### Overall statistics
 | Model | Test Accuracy | Macro avg. precision | Macro avg. recall | Macro avg. F1 | Avg. time/epoch | Convergence rate |
 | ----- | ------------- | -------------------- | ----------------- | ------------- | --------------- | ---------------- |
