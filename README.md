@@ -1,6 +1,6 @@
 # Weighted RNN for News Text Classification
 * This repository contains an implementation of https://arxiv.org/ftp/arxiv/papers/1909/1909.13077.pdf
-* The task is to classify news arcticles into one of the 20 categories. Therefore, it is a sentence classification task.
+* The task is to classify news articles into one of the 20 categories. Therefore, it is a sentence classification task.
 
 ## Architecture details
 The following diagram illustrates the architecture of WRNN:
@@ -46,7 +46,7 @@ The following diagram illustrates the architecture of WRNN:
 #### Graphs
 ![](/images/wrnn_gru_acc.png) ![](/images/wrnn_gru_loss.png)
 #### Confusion Matrix
-![](/images/wrnn_gru_cf.png) 
+![](/images/wrnn_gru_cf.png)
 #### Classification Report
 ![](/images/wrnn_gru_clf.PNG)
 
