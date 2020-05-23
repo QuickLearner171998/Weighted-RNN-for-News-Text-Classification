@@ -39,7 +39,7 @@ The following diagram illustrates the architecture of WRNN:
 | Model | Test Accuracy | Macro avg. precision | Macro avg. recall | Macro avg. F1 | Avg. time/epoch | Convergence rate |
 | ----- | ------------- | -------------------- | ----------------- | ------------- | --------------- | ---------------- |
 | WRNN (GRU unit) | 85.73 | 86.0 | 85.0 | 85.0 | 40.02 | 7 |
-| WRNN (LSTM unit) | 87.37 | 88.0 | 87.0 | 87.0 | 34.23 | 9 |
+| WRNN (LSTM unit) | 87.69 | 88.0 | 87.0 | 87.0 | 34.99 | 11 |
 | GRU baseline | 81.37 | 82.0 | 80.0 | 81.0 | 41.31 | 3 |
 | BiGRU baseline | 77.88 | 79.0 | 77.0 | 78.0 | 75.66 | 3 |
 ### WRNN (GRU unit) Statistics
